@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Exo:wght@300&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+@font-face {
+    font-family: 'Frosty';
+    src: url(/assets/fonts/frosty/FROSTY__.TTF);
+}
+
+*
+{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body
+{
+  max-height:fit-content;
+}
+
+.img-container {
+    position: relative;
+  }
+  
+  .img-text {
+    position: absolute;
+    text-decoration: none;
+    top: 175px;
+    left: 50px;
+    color: #a06d44;
+    font-family: 'Frosty';
+    font-size: 65px;
+    font-weight: bold;
+    z-index: 1;
+  }
+  
+  .img-container img {
+    width: 100%;
+  }
+  
+  .img-text-1
+  {
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    color: grey;
+    font-family:'Exo';
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 1;
+  }
+
+  .img-text-2
+  {
+    position: absolute;
+    top: 380px;
+    left: 50px;
+    color: #8b7765;
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    font-weight: 400;
+    z-index: 1;
+    margin-left: 0;
+    
+  }
+
+  .overflow-image {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    z-index: 1;
+  }
+
+  .container
+  {
+    position: relative;
+    width: 100%;
+    background-color: #f0d7cd;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .container::before
+  {
+    content: '';
+    position: absolute;
+    top:  100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #f0d7cd, transparent);
+    z-index: 10;
+  }
+
+  .container .hetraj
+  {
+    width: 30%;
+    height: 49.5%;
+    position: absolute;
+    left: 75%;
+    top: 55%;
+    transform: translate(-100%, -50%);
+    background-image: url(/assets/images/memories/hetraj/59ba66c0e3b20565daebebd684e6feecIMG20220318191751.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 1px 2px 10px 5px white;
+    animation: hetraj 20s infinite linear;
+  }
+
+  @keyframes hetraj {
+    0%{ background-image: url(/assets/images/memories/hetraj/59ba66c0e3b20565daebebd684e6feecIMG20220318191751.jpg); }
+    35%{ background-image: url(/assets/images/memories/hetraj/42007561103cf64842007561103cf648IMG20210822093850.jpg); }
+    75%{ background-image: url(/assets/images/memories/hetraj/87da0d1e180845998dc55cd77c6ea67bScreenshot_2021-06-06-13-14-20-877_com.google.android.apps.photos.jpg); }
+    90%{ background-image: url(/assets/images/memories/hetraj/b5f0bb1afe55b4bab5f0bb1afe55b4baIMG20210822093907.jpg); }
+  }
+
+
+  .container .details-1
+  {
+    position: relative;
+    top: 850px;
+    font-size: 25px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 300;
+    margin-left: 150px;
+    margin-right: 450px;
+  }
+
+  .container #text 
+  {
+    position: absolute;
+    color: #a06d44;
+    font-size: 15vw;
+    letter-spacing: 2.2;
+    font-family: 'Rancho', cursive;
+    text-align: center;
+    line-height: 1em;
+    top: 10px;
+    z-index: 1;
+  }
+
+  .container-1
+  {
+    position: relative;
+    width: 100%;
+    background-color: #e6cdc2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .container-1 .mummy
+  {
+    width: 37%;
+    height: 54%;
+    position: absolute;
+    right: 25%;
+    top: 50%;
+    transform: translate( -50%, -70%);
+    background-image: url(/assets/images/memories/mummy/006d94a7-97a3-4d05-ac90-e74b25634033-min.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 1px 2px 10px 5px white;
+    animation: mummy 20s infinite linear;
+  }
+
+  @keyframes mummy {
+    0%{ background-image: url(/assets/images/memories/mummy/006d94a7-97a3-4d05-ac90-e74b25634033-min.jpg);}
+    35%{ background-image: url(/assets/images/memories/mummy/20220204_160603-min.jpg); }
+    75%{ background-image: url(/assets/images/memories/mummy/IMG20210725190121-min.jpg); }
+    90%{ background-image: url(/assets/images/memories/mummy/IMG20220318191915-min.jpg); }
+  }
+
+
+  .container-1 .details-1
+  {
+    position: relative;
+    top: 500px;
+    font-size: 25px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 300;
+    margin-left: 450px;
+    margin-right: 100px;
+  }
+
+
+  .container-2
+  {
+    position: relative;
+    width: 100%;
+    background-color: #f0d7cd;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .container-2 .papa
+  {
+    width: 24.5%;
+    height: 60.5%;
+    position: absolute;
+    left: 75%;
+    top: 55%;
+    transform: translate(-100%, -70%);
+    background-image: url(/assets/images/memories/dad/resized/f0facd177111b14e182ec2e6cdefd0e9IMG_1936\ \(1\).jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 1px 2px 10px 5px white;
+    animation: papa 20s infinite linear;
+  }
+
+  @keyframes papa {
+    0%{ background-image: url(/assets/images/memories/dad/resized/f0facd177111b14e182ec2e6cdefd0e9IMG_1936\ \(1\).jpg); }
+    35%{ background-image: url(/assets/images/memories/dad/resized/f92635c830591860f92635c830591860IMG_3417.jpg); }
+    75%{ background-image: url(/assets/images/memories/dad/resized/fa253c353e7db9ccfa253c353e7db9ccIMG20220123210208.jpg); }
+    95%{ background-image: url(/assets/images/memories/dad/resized/IMG_20201116_110330-min.jpg); }
+  }
+
+  .container-2 .details-1
+  {
+    position: relative;
+    top: 530px;
+    font-size: 25px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 300;
+    margin-left: 150px;
+    margin-right: 450px;
+  }
+
+  .container-3
+  {
+    position: relative;
+    width: 100%;
+    background-color: #e6cdc2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .container-3 .yashvi_mix {
+    width: 40%;
+    height: 49.5%;
+    position: absolute;
+    right: 25%;
+    top: 50%;
+    transform: translate( -50%, -70%);
+    background-image: url(/assets/images/memories/mix/41c74872-19ca-4114-863c-d29d1d7f70d7-min.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 1px 2px 10px 5px white;
+    animation: yashvi_mix 20s infinite linear;
+  }
+
+  @keyframes yashvi_mix {
+    0%{ background-image: url(/assets/images/memories/mix/41c74872-19ca-4114-863c-d29d1d7f70d7-min.jpg); }
+    35%{ background-image: url(/assets/images/memories/mix/9c7a02d6-3cec-4a55-891e-56711ffeccb6-min.jpg);}
+    75%{ background-image: url(/assets/images/memories/mix/b265eb0f-3799-4a8b-b243-933a34040001-min.jpg); }
+    90%{ background-image: url(/assets/images/memories/mix/ba5d963d-e98a-480f-a69a-d7951a48c10f-min.jpg); }
+  }
+
+  .container-3 .details-1
+  {
+    position: relative;
+    top: 500px;
+    font-size: 25px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 300;
+    margin-left: 450px;
+    margin-right: 100px;
+  }
+
+  .container-4 
+  {
+    position: relative;
+    width: 100%;
+    background-color: #f0d7cd;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .container-4 .parvati_mata
+  {
+    width: 24.5%;
+    height: 60.5%;
+    position: absolute;
+    left: 75%;
+    top: 55%;
+    transform: translate(-100%, -70%);
+    background-image: url(/assets/images/memories/parvatimata/0b7ac6fd-2c7e-41af-ac59-d64ef99799e9-min.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 1px 2px 10px 5px white;
+    animation: parvati_mata 20s infinite linear;
+  }
+
+  @keyframes parvati_mata {
+    0%{ background-image: url(/assets/images/memories/parvatimata/0b7ac6fd-2c7e-41af-ac59-d64ef99799e9-min.jpg); }
+    35%{ background-image: url(/assets/images/memories/parvatimata/71bd45fd-969d-4cb6-9b91-8b39fc43c0fb-min.jpg); }
+    75%{ background-image: url(/assets/images/memories/parvatimata/a80950ec-b1c1-4ecf-b23b-1b3b79f24b6e-min.jpg); }
+  }
+
+  .container-4 .details-1
+  {
+    position: relative;
+    top: 530px;
+    font-size: 25px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 300;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  
+  .container-5 
+  {
+    position: relative;
+    width: 100%;
+    background-color: #e6cdc2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .container-5 .old_img
+  {
+    width: 40%;
+    height: 49.5%;
+    position: absolute;
+    right: 25%;
+    top: 50%;
+    transform: translate( -50%, -70%);
+    background-image: url(/assets/images/memories/lowmb/51124955-0c65-4c95-81c3-1ef7ab4ee790-min.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 1px 2px 10px 5px white;
+    animation: old 20s infinite linear;
+  }
+
+  @keyframes old {
+    0%{ background-image: url(/assets/images/memories/lowmb/51124955-0c65-4c95-81c3-1ef7ab4ee790-min.jpg); }
+    35%{ background-image: url(/assets/images/memories/lowmb/9943553e-a045-4d7b-87d8-06c869c14c6d-1-min.jpg);}
+    65%{ background-image: url(/assets/images/memories/lowmb/IMG20220204192610-min.jpg); }
+    85%{ background-image: url(/assets/images/memories/lowmb/IMG_2193-min.JPG); }
+    99%{ background-image: url(/assets/images/memories/lowmb/Screenshot_20220121-161556_WhatsApp-min.jpg);}
+  }
+
+  .container-5 .details-1
+  {
+    position: relative;
+    top: 500px;
+    font-size: 25px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 300;
+    margin-left: 450px;
+    margin-right: 100px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Responsive styles */
+/* @media only screen and (max-width: 600px) {
+  .img-text {
+      font-size: 30px;
+      top: 150px;
+      left: 25px;
+  }
+
+  .img-text-1 {
+      font-size: 14px;
+      top: 250px;
+      left: 25px;
+  }
+
+  .img-text-2 {
+      font-size: 20px;
+      top: 325px;
+      left: 25px;
+  }
+}
+*/
+
+@media only screen and (max-width: 600px) {
+  .img-text {
+    font-size: 40px;
+    top: 100px;
+    left: 25px;
+  }
+  .img-text-1 {
+    font-size: 14px;
+    top: 200px;
+    left: 25px;
+  }
+  .img-text-2 {
+    font-size: 20px;
+    top: 250px;
+    left: 25px;
+  }
+  .overflow-image {
+    width: 150px;
+    top: -25px;
+    left: -25px;
+  }
+  .container {
+    height: 100vh;
+  }
+  .container::before {
+    top: 50px;
+    height: 50px;
+  }
+  .container .hetraj {
+    width: 50%;
+    height: 70%;
+    left: 25%;
+    top: 25%;
+  }
+  .container .details-1 {
+    top: 550px;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 250px;
+  }
+  #text {
+    font-size: 10vw;
+    letter-spacing: 1.5;
+    top: 5px;
+  }
+
+  .container-1 .mummy {
+    width: 60%;
+    height: 80%;
+    right: 20%;
+    top: 20%;
+  }
+  .container-1 .details-1 {
+    top: 350px;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-right: 50px;
+  }
+
+  .container-2 .papa {
+    width: 50%;
+    height: 80%;
+    left: 25%;
+    top: 20%;
+  }
+  .container-2 .details-1 {
+    top: 350px;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 250px;
+  }
+
+  .container-3 .yashvi_mix {
+    width: 60%;
+    height: 80%;
+    right: 20%;
+    top: 20%;
+  }
+  .container-3 .details-1 {
+    top: 350px;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-right: 50px;
+  }
+
+  .container-4 .parvati_mata {
+    width: 50%;
+    height: 100%;
+    left: 25%;
+    top: 0;
+    transform: translate(-50%, 0);
+    }
+
+    .container-5 .old_img {
+      width: 80%;
+      height: 100%;
+      right: 10%;
+      top: 0;
+      transform: translate(0, 0);
+      }
+      .container-5 .details-1 {
+      font-size: 20px;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center;
+      }
+
+}
+
+
+
+
+
+
+
